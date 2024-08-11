@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Personen</title>
+  </head>
+  <body>
+    <h1>Personen</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Alter</th>
+          <th>Aktionen</th>
+        </tr>
+      </thead>
+      <tbody id="persons-table-body"></tbody>
+    </table>
+
+    <h2>Neue Person hinzufügen</h2>
+    <form novalidate id="form-add-user">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+      <br />
+      <label for="age">Alter:</label>
+      <input type="number" id="age" required />
+      <br />
+      <button type="button" id="button-add-user">Hinzufügen</button>
+    </form>
+    <script type="module" src="/utils/main.js"></script>
+  </body>
+</html>
